@@ -16,13 +16,17 @@ header <- dashboardHeader(
 # Dashboard body
 body <- dashboardBody(
   fluidRow(
+    
+    # Message across top of app
+    p("Select DATE and TIME to visualize locations and categories 
+      of crimes committed.  Click on CRIME MARKERS for more detailed
+      descriptions.", 
+      class = "text-muted", align = "center"),
+    
+
     column(width = 9,
            box(width = NULL, solidHeader = TRUE, 
                leafletOutput("myMap", height = 500))),
-    
-    # Message at top of app
-    p("Select date and time to visualize locations and categories of crimes committed",
-      class = "text-muted", align = "center"),
     
     # Input to select city (currently only SF)
     column(width = 3,

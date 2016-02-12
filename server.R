@@ -94,7 +94,8 @@ shinyServer(function(input, output, session) {
           addCircles(lng = as.numeric(crimesData$x), lat = as.numeric(crimesData$y), 
                      radius = 110, color = "black", fill = TRUE, weight = 0.8,
                      fillColor = pal(crimesData$category),
-                     opacity = 1.0, fillOpacity = 1.0) %>%
+                     opacity = 1.0, fillOpacity = 1.0,
+                     popup = tolower(crimesData$descript)) %>%
           addLegend("bottomright", pal=pal, values=crimesData$category,
                     layerId="colorLegend", opacity = 0.8) 
       
