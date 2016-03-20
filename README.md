@@ -5,4 +5,4 @@ Crime data for 2003-present is obtained from [SF OpenData](https://data.sfgov.or
 
 Web app found [here](https://kcschuster.shinyapps.io/crimemap/).
 
-A description of this project can be found on my [website](https://sites.google.com/site/kelseycschuster/independent-projects/home).
+A description of this project can be found on my [website](https://sites.google.com/site/kelseycschuster/independent-projects/SF-crime-visualization).
